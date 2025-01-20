@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/15b782680e.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="header">
+<div class="container">
+    <nav>
+        <img src="Images/OIP (24).jpg" class="logo" alt="">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+     <p>Software Engineer</p>
+     <h1>Hello, I am <span>Adrodri</span><br> Savior Ngaka </h1>
+    </div>
+</div>
+</div>
+<!-----------about---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/S.Ngaka-3.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a passionate and detail-oriented software engineer with a strong background in designing, developing, and deploying innovative software solutions. Equipped with a solid foundation in programming, I specialize in crafting user-friendly applications that solve real-world problems.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>Database Management</span><br>Designing and creating databases</li>
+                        <li><span>Programming Languages</span><br>Like C#, SQL, C, Javascript, Python</li>
+                        <li><span>Software Development</span><br>Designing and creating Web and desktop Apps</li>
+                        <li><span>VR/AR </span><br>Designing VR and AR environments</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Free Lance</span><br>Designing Web/App Interfaces,<br>Built a WhatsApp clone,<br>Built a calculator in UWP,<br>Designed Databases for projects like Homify,<br>Built Hostel Management System called Hostel Hub.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>ISBAT UNIVERSITY</li>
+                        <li><span>2020</span><br>ST.Peter's Naalya SSS</li>
+                        <li><span>2016</span><br>Bishop Cipriano Kihangire SSS</li>
+                        <li><span>2006-2015</span><br>Elementary and Primary School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------services---------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I specialize in crafting visually appealing, user-friendly, and responsive websites tailored to meet your unique needs. Whether you're a business looking to establish a strong online presence or an individual showcasing your portfolio, I deliver web designs that are modern, functional, and aligned with your brand.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UX/UI Design</h2>
+                <p>I design intuitive, visually appealing, and user-centered interfaces that enhance user engagement and ensure seamless interaction with your product. My goal is to create experiences that are not only functional but also enjoyable, driving satisfaction and loyalty among your users</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database Management</h2>
+                <p>I provide efficient and reliable database management solutions to help you store, organize, and access your data seamlessly. Whether you need a new database designed from scratch or an existing one optimized for better performance, I deliver solutions tailored to your specific needs.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------portfolio---------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/File Converter.png" height="500px" alt="">
+                <div class="layer">
+                    <h3>A File Converter App</h3>
+                    <p>A windows application that allows users to convert files between various formats, such as PDF, Word, and Excel.<br>Download it from Windows Store.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/EX-plore.png" height="500px" alt="">
+                <div class="layer">
+                    <h3>A Tourism App</h3>
+                    <p>A windows application called EX-plore that allows users to search for vacation destinations, possible settlement areas and just view exciting features and cities the world has to offer.<br>Download it from Windows Store.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/download.jpg" height="500px" alt="">
+                <div class="layer">
+                    <h3>A Hostel Management System</h3>
+                    <p>A windows desktop application called Hostel Hub that allows users to manage their hostels with processes like bookings and all.<br>Download it from Windows Store.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/your-SAVIE016"  class="btn">See More</a>
+    </div>
+</div>
+<!----------contact-------- -->
+<div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>ngakasavior016@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+256-770471928</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/the_savie016" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://x.com/TheOriginalSavie" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/Ngaka-Savior" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+            <a href="Images/design.png" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg">
+              Hello
+              </span>
+        </div>
+        </div>
+        <div class="copyright">
+            <p> My 2024 Website<i class="fa-solid fa-heart"></i> &copy;Adrodri Savior Ngaka . All rights reserved.</p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
